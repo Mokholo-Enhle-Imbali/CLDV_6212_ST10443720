@@ -1,0 +1,67 @@
+﻿@model CLVD6212_POE.Models.Customer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Customer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            @Html.AntiForgeryToken()
+
+            <div class="form-group"> 
+                <label asp-for="PartitionKey" class="control-label"></label> 
+                <input asp-for="PartitionKey" class="form-control" /> 
+                <span asp-validation-for="PartitionKey" class="text-danger"></span> 
+            </div> 
+            <div class="form-group"> 
+                <label asp-for="RowKey" class="control-label"></label> 
+                <input asp-for="RowKey" class="form-control" /> 
+                <span asp-validation-for="RowKey" class="text-danger"></span> 
+            </div> <div class="form-group"> 
+                <label asp-for="Timestamp" class="control-label"></label>
+                <input asp-for="Timestamp" class="form-control" /> 
+                <span asp-validation-for="Timestamp" class="text-danger"></span> 
+            </div> 
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label> 
+                <input asp-for="CustomerId" class="form-control" />
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+                </div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname"></label>
+                <input asp-for="Surname" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ShippingAddress"></label>
+                <input asp-for="ShippingAddress" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

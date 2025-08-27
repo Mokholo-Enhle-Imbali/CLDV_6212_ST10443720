@@ -1,0 +1,89 @@
+﻿@model CLVD6212_POE.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h1>Edit Product</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <!-- Hidden fields for Azure Table properties -->
+            <input type="hidden" asp-for="PartitionKey" />
+            <input type="hidden" asp-for="RowKey" />
+            <input type="hidden" asp-for="ETag" />
+            <input type="hidden" asp-for="Timestamp" />
+            <input type="hidden" asp-for="ImageUrl" /> <!-- Keep existing image URL -->
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" type="number" step="0.01" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="StockAvailable" class="control-label"></label>
+                <input asp-for="StockAvailable" type="number" class="form-control" />
+                <span asp-validation-for="StockAvailable" class="text-danger"></span>
+            </div>
+
+            <!-- Current Image Display -->
+            <div class="form-group mb-3">
+                <label class="control-label">Current Image</label>
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <div>
+                        <img src="@Model.ImageUrl" alt="Product Image" width="200" height="200" 
+                             style="object-fit: cover; border-radius: 8px; border: 1px solid #ddd;" />
+                        <div class="form-text">Current product image</div>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-muted">No image currently set</div>
+                }
+            </div>
+
+            <!-- File Upload Field (NOT bound to ImageUrl) -->
+            <div class="form-group mb-3">
+                <label class="control-label">Upload New Image (optional)</label>
+                <input type="file" class="form-control" name="formFile" accept="image/*" />
+                <div class="form-text">Leave empty to keep current image</div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Update Product
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-times"></i> Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

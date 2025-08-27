@@ -1,0 +1,95 @@
+﻿@model CLVD6212_POE.Models.FileUploadModel
+
+@{
+    ViewData["Title"] = "Upload Proof of Payment";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-file-upload"></i> Upload Proof of Payment
+                </h3>
+            </div>
+            <div class="card-body">
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="fas fa-check-circle"></i> @TempData["Success"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                <form asp-action="Index" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="ProofOfPayment" class="form-label">
+                            <i class="fas fa-file-invoice-dollar"></i> Proof of Payment File
+                        </label>
+                        <input asp-for="ProofOfPayment" class="form-control" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+                        <span asp-validation-for="ProofOfPayment" class="text-danger"></span>
+                        <div class="form-text">
+                            Accepted formats: PDF, JPG, PNG, DOC, DOCX. Maximum file size: 10MB.
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-cloud-upload-alt"></i> Upload File
+                        </button>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                            <i class="fas fa-home"></i> Back to Home
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Upload History Section (Optional) -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="card-title">
+                    <i class="fas fa-history"></i> Recent Uploads
+                </h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">Upload history would be displayed here once implemented.</p>
+                <!-- You can add a table here to show upload history if needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function() {
+            // Clear success message after 5 seconds
+            setTimeout(function() {
+                $('.alert-success').fadeOut('slow');
+            }, 5000);
+
+            // File size validation
+            $('form').submit(function() {
+                var fileInput = $('#ProofOfPayment')[0];
+                if (fileInput.files.length > 0) {
+                    var fileSize = fileInput.files[0].size; // in bytes
+                    var maxSize = 10 * 1024 * 1024; // 10MB
+
+                    if (fileSize > maxSize) {
+                        alert('File size exceeds 10MB limit. Please choose a smaller file.');
+                        return false;
+                    }
+                }
+                return true;
+            });
+        });
+    </script>
+}
