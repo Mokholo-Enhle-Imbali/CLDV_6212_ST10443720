@@ -26,7 +26,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+          @*   <th>
                 @Html.DisplayNameFor(model => model.PartitionKey)
             </th>
             <th>
@@ -34,7 +34,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Timestamp)
-            </th>
+            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.CustomerId)
             </th>
@@ -59,7 +59,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+          @*   <td>
                 @Html.DisplayFor(modelItem => item.PartitionKey)
             </td>
             <td>
@@ -67,7 +67,7 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Timestamp)
-            </td>
+            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.CustomerId)
             </td>
