@@ -1,6 +1,8 @@
-using System.Diagnostics;
 using CLVD6212_POE.Models;
+using CLVD6212_POE.Service;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace CLVD6212_POE.Controllers
 {
@@ -8,14 +10,19 @@ namespace CLVD6212_POE.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IAzureStorageService _storageService;
+
+
+        public HomeController(ILogger<HomeController> logger, IAzureStorageService storageService)
         {
             _logger = logger;
+            _storageService = storageService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var products = await _storageService.GetAllEntitiesAsync<Product>();
+            return View(products);
         }
 
         public IActionResult Privacy()

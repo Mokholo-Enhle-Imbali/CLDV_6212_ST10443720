@@ -1,89 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\",
+  "WorkspaceRootPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\service\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:service\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\upload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\upload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\upload\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\fileuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\fileuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\viewmodels\\ordercreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\service\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:service\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\fileuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\fileuploadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:views\\order\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\documents\\clvd6212\\clvd6212_poe\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\cldv_6212_st10443720\\clvd6212_poe\\models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22770825-98CD-4338-A77F-92ABB1835A55}|CLVD6212_POE.csproj|solutionrelative:models\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -103,71 +119,153 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T16:28:20.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Customer\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Customer\\Create.cshtml",
+              "RelativeToolTip": "Views\\Customer\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-26T12:28:00.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Create.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAOMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-26T10:28:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-26T09:13:51.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-26T12:30:31.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T16:20:27.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T15:53:01.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T15:57:45.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Upload\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Upload\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Upload\\Index.cshtml",
+              "RelativeToolTip": "Views\\Upload\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-26T20:16:04.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:46:26.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Edit.cshtml",
               "RelativeToolTip": "Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAE0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-27T11:41:43.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAAMsAAAAAAAAAAAAjwOQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T09:41:21.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Product\\Delete.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-27T08:24:20.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderCreateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\ViewModels\\OrderCreateViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ViewModels\\OrderCreateViewModel.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\ViewModels\\OrderCreateViewModel.cs",
-              "RelativeToolTip": "Models\\ViewModels\\OrderCreateViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T11:42:34.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAowJwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:53:53.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Order.cs",
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAIwD8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,23 +273,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAswIAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAowJwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T09:46:26.729Z"
+              "WhenOpened": "2025-08-22T09:53:53.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:27:37.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\OrderCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\ViewModels\\OrderCreateViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\OrderCreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T11:42:34.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Product\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Product\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Product\\Delete.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-27T08:24:20.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAjwOQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T09:41:21.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AzureStorageService.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Service\\AzureStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Service\\AzureStorageService.cs",
               "RelativeDocumentMoniker": "Service\\AzureStorageService.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Service\\AzureStorageService.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Service\\AzureStorageService.cs",
               "RelativeToolTip": "Service\\AzureStorageService.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAAAAGcAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,11 +346,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -211,11 +358,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "UploadController.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\UploadController.cs",
               "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Controllers\\UploadController.cs",
               "RelativeToolTip": "Controllers\\UploadController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -223,23 +370,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T15:53:01.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\Details.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Details.cshtml",
               "RelativeToolTip": "Views\\Order\\Details.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -247,23 +382,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Upload\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Upload\\Index.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Upload\\Index.cshtml",
-              "RelativeToolTip": "Views\\Upload\\Index.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-26T20:16:04.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "FileUploadModel.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\FileUploadModel.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\FileUploadModel.cs",
               "RelativeDocumentMoniker": "Models\\FileUploadModel.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\FileUploadModel.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\FileUploadModel.cs",
               "RelativeToolTip": "Models\\FileUploadModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -271,23 +394,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\Index.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Index.cshtml",
-              "RelativeToolTip": "Views\\Order\\Index.cshtml",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAIwKwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-26T09:13:51.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Views\\Order\\Edit.cshtml",
               "RelativeToolTip": "Views\\Order\\Edit.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAEMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -295,47 +406,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-26T12:30:31.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\Create.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Order\\Create.cshtml",
-              "RelativeToolTip": "Views\\Order\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAOMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-26T10:28:09.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Customer\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Views\\Customer\\Create.cshtml",
-              "RelativeToolTip": "Views\\Customer\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-26T12:28:00.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Customer.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\Customer.cs",
               "RelativeToolTip": "Models\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,11 +418,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "HomeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\ViewModels\\HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\ViewModels\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ViewModels\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\Models\\ViewModels\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\Models\\ViewModels\\HomeViewModel.cs",
               "RelativeToolTip": "Models\\ViewModels\\HomeViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

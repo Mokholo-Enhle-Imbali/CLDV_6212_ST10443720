@@ -4,6 +4,20 @@
     ViewData["Title"] = "Orders";
 }
 
+<style>
+    .btn {
+        padding: 12px 25px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+</style>
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2><i class="fas fa-shopping-cart"></i> Orders</h2>
     <a asp-action="Create" class="btn btn-primary">
@@ -171,3 +185,5 @@ else
         }
     </script>
 }
+
+<a href="/Home/Index" class="btn" style="background-color: rgb(65, 132, 225); color: rgb(0, 229, 255);"> Home</a>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\CLVD6212_POE.csproj": {}
+    "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\CLVD6212_POE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\CLVD6212_POE.csproj": {
+    "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\CLVD6212_POE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\CLVD6212_POE.csproj",
+        "projectUniqueName": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\CLVD6212_POE.csproj",
         "projectName": "CLVD6212_POE",
-        "projectPath": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\CLVD6212_POE.csproj",
+        "projectPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\CLVD6212_POE.csproj",
         "packagesPath": "C:\\Users\\enhle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enhle\\OneDrive\\Documents\\CLVD6212\\CLVD6212_POE\\obj\\",
+        "outputPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLDV_6212_ST10443720\\CLVD6212_POE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

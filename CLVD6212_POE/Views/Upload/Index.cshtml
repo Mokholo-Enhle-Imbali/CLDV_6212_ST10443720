@@ -48,21 +48,9 @@
                 </form>
             </div>
         </div>
-
-        <!-- Upload History Section (Optional) -->
-        <div class="card mt-4">
-            <div class="card-header">
-                <h5 class="card-title">
-                    <i class="fas fa-history"></i> Recent Uploads
-                </h5>
-            </div>
-            <div class="card-body">
-                <p class="text-muted">Upload history would be displayed here once implemented.</p>
-                <!-- You can add a table here to show upload history if needed -->
-            </div>
-        </div>
-    </div>
-</div>
+   </div>
+ </div>
+          
 
 @section Scripts {
     @{
@@ -71,10 +59,10 @@
 
     <script>
         $(document).ready(function() {
-            // Clear success message after 5 seconds
+            // Clear success message after 10 seconds
             setTimeout(function() {
                 $('.alert-success').fadeOut('slow');
-            }, 5000);
+            }, 10000);
 
             // File size validation
             $('form').submit(function() {
