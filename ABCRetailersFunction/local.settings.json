@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=abcretails1234;AccountKey=2VJ1CADb4w6RNA2/m+34maEmkNxGRat2sXAsDNtEGki5e/rysWBDzOoJrebuS4GRdFCrwHYzK17n+ASt/oJ3LQ==;EndpointSuffix=core.windows.net",
+    "STORAGE_CONNECTION": "DefaultEndpointsProtocol=https;AccountName=abcretails1234;AccountKey=2VJ1CADb4w6RNA2/m+34maEmkNxGRat2sXAsDNtEGki5e/rysWBDzOoJrebuS4GRdFCrwHYzK17n+ASt/oJ3LQ==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+
+    "TABLE_CUSTOMER": "Customer",
+    "TABLE_PRODUCT": "Product",
+    "TABLE_ORDER": "Order",
+
+    "BLOB_PRODUCT_IMAGES": "product-images",
+    "BLOB_PAYMENT_PROOFS": "payment-proofs",
+
+    "QUEUE_ORDER_NOTIFICATIONS": "order-notifications",
+    "QUEUE_STOCK_UPDATES": "stock-updates",
+    "QUEUE_IMAGE_PROCESSING": "image-processing",
+
+    "FILESHARE_CONTRACTS": "contracts",
+    "FILESHARE_DIR_PAYMENTS": "payments"
+  }
+}

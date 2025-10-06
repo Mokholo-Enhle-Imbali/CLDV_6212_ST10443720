@@ -98,8 +98,14 @@
                     }
                 </td>
             <td>
-                    @Html.ActionLink("Edit", "Edit", new { partitionKey = item.PartitionKey, rowKey = item.RowKey }) |
-                    @Html.ActionLink("Delete", "Delete", new { partitionKey = item.PartitionKey, rowKey = item.RowKey })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |
+                    @using (Html.BeginForm("Delete", "Product", new { id = item.ProductId }, FormMethod.Post, null, new { style = "display:inline" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="submit" value="Delete" class="btn-link"
+                               onclick="return confirm('Are you sure you want to delete this product?');"
+                               style="border:none; background:none; color:#007bff; text-decoration:underline; cursor:pointer; padding:0;" />
+                    }
             </td>
         </tr>
 }

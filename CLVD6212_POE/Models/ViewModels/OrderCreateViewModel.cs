@@ -17,7 +17,7 @@ namespace CLVD6212_POE.Models
         [Required]
         [Display(Name = "Quantity")]
         [Range(1, int.MaxValue, ErrorMessage = "Quantity must be at least 1")]
-        public int Quantitiy { get; set; }
+        public int Quantity { get; set; }
 
         [Required]
         [Display(Name = "Order Date")]

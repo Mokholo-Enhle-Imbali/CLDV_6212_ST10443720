@@ -13,25 +13,25 @@
         <form asp-action="Edit" method="post">
             @Html.AntiForgeryToken()
 
-            <div class="form-group"> 
-                <label asp-for="PartitionKey" class="control-label"></label> 
-                <input asp-for="PartitionKey" class="form-control" /> 
-                <span asp-validation-for="PartitionKey" class="text-danger"></span> 
-            </div> 
-            <div class="form-group"> 
-                <label asp-for="RowKey" class="control-label"></label> 
-                <input asp-for="RowKey" class="form-control" /> 
-                <span asp-validation-for="RowKey" class="text-danger"></span> 
-            </div> <div class="form-group"> 
-                <label asp-for="Timestamp" class="control-label"></label>
-                <input asp-for="Timestamp" class="form-control" /> 
-                <span asp-validation-for="Timestamp" class="text-danger"></span> 
-            </div> 
             <div class="form-group">
-                <label asp-for="CustomerId" class="control-label"></label> 
+                <label asp-for="PartitionKey" class="control-label"></label>
+                <input asp-for="PartitionKey" class="form-control" />
+                <span asp-validation-for="PartitionKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RowKey" class="control-label"></label>
+                <input asp-for="RowKey" class="form-control" />
+                <span asp-validation-for="RowKey" class="text-danger"></span>
+            </div> <div class="form-group">
+                <label asp-for="Timestamp" class="control-label"></label>
+                <input asp-for="Timestamp" class="form-control" />
+                <span asp-validation-for="Timestamp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
                 <input asp-for="CustomerId" class="form-control" />
                 <span asp-validation-for="CustomerId" class="text-danger"></span>
-                </div>
+            </div>
             <div class="form-group">
                 <label asp-for="Name"></label>
                 <input asp-for="Name" class="form-control" />
@@ -63,5 +63,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

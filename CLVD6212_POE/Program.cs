@@ -1,34 +1,55 @@
+// Program.cs
 using CLVD6212_POE.Service;
+using Microsoft.AspNetCore.Http.Features;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// MVC
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<IAzureStorageService, AzureStorageService>();
+
+// Typed HttpClient for your Azure Functions
+builder.Services.AddHttpClient("Functions", (sp, client) =>
+{
+    var cfg = sp.GetRequiredService<IConfiguration>();
+    var baseUrl = cfg["Functions:BaseUrl"] ?? throw new InvalidOperationException("Functions:BaseUrl missing");
+    client.BaseAddress = new Uri(baseUrl.TrimEnd('/') + "/"); // adjust if your Functions don't use /api
+    client.Timeout = TimeSpan.FromSeconds(100);
+});
+
+// Use the typed client (replaces IAzureStorageService everywhere)
+builder.Services.AddScoped<IFunctionsApi, FunctionsApiClient>();
+
+// Optional: allow larger multipart uploads (images, proofs, etc.)
+builder.Services.Configure<FormOptions>(o =>
+{
+    o.MultipartBodyLengthLimit = 50 * 1024 * 1024; // 50 MB
+});
+
+// Optional: logging is added by default, keeping this is harmless
+builder.Services.AddLogging();
+
 var app = builder.Build();
 
-var testConnectionString = builder.Configuration.GetConnectionString("AzureStorage");
-Console.WriteLine(testConnectionString ?? "Connection string not found");
+// Culture (your original fix for decimal handling)
+var culture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = culture;
+CultureInfo.DefaultThreadCurrentUICulture = culture;
 
-// Configure the HTTP request pipeline.
+// Pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
-
 app.UseAuthorization();
-
-app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

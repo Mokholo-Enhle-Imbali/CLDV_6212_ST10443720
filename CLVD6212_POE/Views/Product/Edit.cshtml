@@ -14,9 +14,10 @@
             <!-- Hidden fields for Azure Table properties -->
             <input type="hidden" asp-for="PartitionKey" />
             <input type="hidden" asp-for="RowKey" />
+            <input type="hidden" asp-for="ProductId" /> 
             <input type="hidden" asp-for="ETag" />
             <input type="hidden" asp-for="Timestamp" />
-            <input type="hidden" asp-for="ImageUrl" /> <!-- Keep existing image URL -->
+            <input type="hidden" asp-for="ImageUrl" />
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -64,7 +65,7 @@
             <!-- File Upload Field (NOT bound to ImageUrl) -->
             <div class="form-group mb-3">
                 <label class="control-label">Upload New Image (optional)</label>
-                <input type="file" class="form-control" name="formFile" accept="image/*" />
+                <input type="file" class="form-control" name="imageFile" accept="image/*" />
                 <div class="form-text">Leave empty to keep current image</div>
             </div>
 

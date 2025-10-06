@@ -7,137 +7,74 @@ using System.Collections.Concurrent;
 
 namespace CLVD6212_POE.Controllers
 {
-    
+
     public class CustomerController : Controller
     {
-        private readonly IAzureStorageService _storageService;
+        private readonly IFunctionsApi _api;
+        public CustomerController(IFunctionsApi api) => _api = api;
 
-        public CustomerController(IAzureStorageService storageService)
-        {
-            _storageService = storageService;
-        }
-
-
-    
         public async Task<IActionResult> Index()
         {
-            var customers= await _storageService.GetAllEntitiesAsync<Customer>();
+            var customers = await _api.GetCustomersAsync();
             return View(customers);
         }
 
+        public IActionResult Create() => View();
 
-        //Create customer view and http post (funcrional part)
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Customer customer)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return View(customer);
+            try
             {
-                try
-                {
-                    await _storageService.AddEntityAsync(customer);
-                    TempData["Sucess Message"] = $"Customer {customer.Username} Created Sucessfully";
-                    return RedirectToAction(nameof(Index));
-                }
-
-                catch (Exception ex) 
-                {
-                    ModelState.AddModelError("", "Error creating the customer");
-                }
-                
+                await _api.CreateCustomerAsync(customer);
+                TempData["Success"] = "Customer created successfully!";
+                return RedirectToAction(nameof(Index));
             }
-
-            return View(customer);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error creating customer: {ex.Message}");
+                return View(customer);
+            }
         }
 
-
-        //Edit each customer
-        public async Task<IActionResult> Edit(string partitionKey, string rowKey) //view
+        public async Task<IActionResult> Edit(string id)
         {
+            if (string.IsNullOrWhiteSpace(id)) return NotFound();
+            var customer = await _api.GetCustomerAsync(id);
+            return customer is null ? NotFound() : View(customer);
+        }
 
-            if (string.IsNullOrEmpty(partitionKey)||string.IsNullOrEmpty(rowKey))
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, Customer customer)
+        {
+            if (!ModelState.IsValid) return View(customer);
+            try
             {
-                return NotFound();
+                await _api.UpdateCustomerAsync(id, customer);
+                TempData["Success"] = "Customer updated successfully!";
+                return RedirectToAction(nameof(Index));
             }
-
-
-            var customer= await _storageService.GetEntityAsync<Customer>(partitionKey,rowKey);
-
-            if (customer==null)
+            catch (Exception ex)
             {
-                return NotFound();
+                ModelState.AddModelError("", $"Error updating customer: {ex.Message}");
+                return View(customer);
             }
-
-            return View(customer);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult>Edit(Customer customer) //http post
+        public async Task<IActionResult> Delete(string id)
         {
-         
-
-            if (ModelState.IsValid) 
+            try
             {
-                try
-                {
-                   
-                    await _storageService.UpdateEntityAsync(customer);
-                    TempData["Success"] = "Customer Updated Successfuly";
-                    return RedirectToAction(nameof(Index));
-                }
-                catch (Exception ex)
-                {
-
-                    ModelState.AddModelError("",$"Errror Updating the customer: {ex.Message}");
-                    
-                }
-
-                
+                await _api.DeleteCustomerAsync(id);
+                TempData["Success"] = "Customer deleted successfully!";
             }
-
-            return View(customer);
-
-        }
-
-        //delete a customer
-        public async Task<IActionResult> Delete(string partitionKey, string rowKey) //view
-        {
-            
-
-            if (string.IsNullOrEmpty(partitionKey)||string.IsNullOrEmpty(rowKey))
+            catch (Exception ex)
             {
-                return NotFound();
+                TempData["Error"] = $"Error deleting customer: {ex.Message}";
             }
-
-         var entity= await _storageService.GetEntityAsync<Customer>(partitionKey, rowKey);
-
-            if (entity == null)
-            {
-                return NotFound();
-            }
-
-            return View(entity); 
-        }
-
-        [HttpPost,ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteAction(string partitionKey,string rowKey) //action
-        {
-          
-            await _storageService.DeleteEntityAsync<Customer>(partitionKey, rowKey);
-
-            TempData["SuccessMessage"] = "Customer deleted successfully";
-
             return RedirectToAction(nameof(Index));
         }
-
-
-
     }
 }
