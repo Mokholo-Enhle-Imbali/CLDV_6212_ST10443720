@@ -2,30 +2,54 @@
 
 @{
     ViewData["Title"] = "Create Order";
+    var showCustomerDropdown = ViewData["ShowCustomerDropdown"] as bool? ?? true;
+    var currentCustomerId = ViewData["CurrentCustomerId"] as string;
+    var currentCustomerName = ViewData["CurrentCustomerName"] as string;
 }
 
 <h2><i class="fas fa-shopping-cart"></i> Add Order</h2>
+
+@if (!showCustomerDropdown)
+{
+    <div class="alert alert-info mb-3">
+        <i class="fas fa-user"></i> Creating order for your account: <strong>@currentCustomerName</strong>
+    </div>
+}
 
 <div class="row">
     <div class="col-md-8">
         <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <!-- Customer selection -->
-            <div class="form-group mb-3">
-                <label asp-for="CustomerId" class="form-label">Select Customer</label>
-                <select asp-for="CustomerId" class="form-select" id="customerSelect">
-                    <option value="">-- Select Customer --</option>
-                    @foreach (var customer in Model.Customers)
-                    {
-                        
-                        <option value="@customer.CustomerId">
-                            @customer.Name @customer.Surname (@customer.Username)
-                        </option>
-                    }
-                </select>
-                <span asp-validation-for="CustomerId" class="text-danger"></span>
-            </div>
+            @if (showCustomerDropdown)
+            {
+                <!-- Customer selection (shown to Admin) -->
+                <div class="form-group mb-3">
+                    <label asp-for="CustomerId" class="form-label">Select Customer</label>
+                    <select asp-for="CustomerId" class="form-select" id="customerSelect">
+                        <option value="">-- Select Customer --</option>
+                        @foreach (var customer in Model.Customers)
+                        {
+                            <option value="@customer.CustomerId">
+                                @customer.Name @customer.Surname (@customer.Username)
+                            </option>
+                        }
+                    </select>
+                    <span asp-validation-for="CustomerId" class="text-danger"></span>
+                </div>
+            }
+            else
+            {
+                <!-- Hidden field for customer ID (used by Customer role) -->
+                <input type="hidden" asp-for="CustomerId" value="@currentCustomerId" />
+
+                <!-- Display customer info instead of dropdown -->
+                <div class="form-group mb-3">
+                    <label class="form-label">Customer</label>
+                    <input type="text" class="form-control" value="@currentCustomerName" readonly />
+                    <div class="form-text">You are creating this order for your own account</div>
+                </div>
+            }
 
             <!-- Product selection -->
             <div class="form-group mb-3">
@@ -34,7 +58,6 @@
                     <option value="">-- Select Product --</option>
                     @foreach (var product in Model.Products)
                     {
-                       
                         <option value="@product.ProductId" data-price="@product.Price" data-stock="@product.StockAvailable">
                             @product.ProductName - @product.Price.ToString("C") (Stock: @product.StockAvailable)
                         </option>
@@ -48,7 +71,6 @@
                 <div class="col-md-6">
                     <div class="form-group mb-3">
                         <label asp-for="OrderDate" class="form-label">Order Date</label>
-                      
                         <input asp-for="OrderDate" class="form-control" type="date" />
                         <span asp-validation-for="OrderDate" class="text-danger"></span>
                     </div>
@@ -94,7 +116,7 @@
                 <button type="submit" class="btn btn-primary" id="submitBtn">
                     <i class="fas fa-save"></i> Create Order
                 </button>
-                <a asp-action="Index" class="btn btn-secondary">
+                <a asp-action="MyOrders" class="btn btn-secondary">
                     <i class="fas fa-times"></i> Cancel
                 </a>
             </div>
@@ -122,7 +144,6 @@
     }
 
     <script>
-    
         let currentPrice = 0;
         let availableStock = 0;
         let selectedProductName = '';
@@ -158,7 +179,10 @@
             updateOrderSummary();
         });
 
-        document.getElementById('customerSelect').addEventListener('change', updateOrderSummary);
+        @if (showCustomerDropdown)
+        {
+                <text>document.getElementById('customerSelect').addEventListener('change', updateOrderSummary);</text>
+        }
 
         function validateQuantity() {
             const quantity = parseInt(document.getElementById('quantityInput').value) || 0;
@@ -193,39 +217,81 @@
             const quantity = parseInt(document.getElementById('quantityInput').value) || 0;
             const summaryDiv = document.getElementById('orderSummary');
 
-            if (customerSelect.value && productSelect.value && quantity > 0) {
-                const customerText = customerSelect.options[customerSelect.selectedIndex].text;
-                const total = currentPrice * quantity;
+            @if (showCustomerDropdown)
+            {
+                    <text>
+                    if (customerSelect.value && productSelect.value && quantity > 0) {
+                        const customerText = customerSelect.options[customerSelect.selectedIndex].text;
+                        const total = currentPrice * quantity;
 
-                summaryDiv.innerHTML = `
-                    <div class="alert alert-info">
-                        <h6><i class="fas fa-shopping-cart"></i> Order Preview</h6>
-                        <p><strong>Customer:</strong><br/><small>${customerText}</small></p>
-                        <p><strong>Product:</strong><br/><small>${selectedProductName}</small></p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6"><strong>Quantity:</strong></div>
-                            <div class="col-6 text-end">${quantity}</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6"><strong>Unit Price:</strong></div>
-                            <div class="col-6 text-end">$${currentPrice.toFixed(2)}</div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-6"><strong>Total:</strong></div>
-                            <div class="col-6 text-end"><span class="text-success h5">$${total.toFixed(2)}</span></div>
-                        </div>
-                    </div>
-                `;
-            } else {
-                summaryDiv.innerHTML = `
-                    <div class="alert alert-secondary">
-                        <h6><i class="fas fa-clipboard-list"></i> Order Summary</h6>
-                        <p class="text-muted mb-0">Select customer and product to see order preview</p>
-                    </div>
-                `;
+                        summaryDiv.innerHTML = `
+                            <div class="alert alert-info">
+                                <h6><i class="fas fa-shopping-cart"></i> Order Preview</h6>
+                                <p><strong>Customer:</strong><br/><small>${customerText}</small></p>
+                                <p><strong>Product:</strong><br/><small>${selectedProductName}</small></p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6"><strong>Quantity:</strong></div>
+                                    <div class="col-6 text-end">${quantity}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><strong>Unit Price:</strong></div>
+                                    <div class="col-6 text-end">$${currentPrice.toFixed(2)}</div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6"><strong>Total:</strong></div>
+                                    <div class="col-6 text-end"><span class="text-success h5">$${total.toFixed(2)}</span></div>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        showDefaultSummary();
+                    }
+                    </text>
             }
+            else
+            {
+                    <text>
+                    if (productSelect.value && quantity > 0) {
+                        const total = currentPrice * quantity;
+
+                        summaryDiv.innerHTML = `
+                            <div class="alert alert-info">
+                                <h6><i class="fas fa-shopping-cart"></i> Order Preview</h6>
+                                <p><strong>Customer:</strong><br/><small>@currentCustomerName</small></p>
+                                <p><strong>Product:</strong><br/><small>${selectedProductName}</small></p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6"><strong>Quantity:</strong></div>
+                                    <div class="col-6 text-end">${quantity}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><strong>Unit Price:</strong></div>
+                                    <div class="col-6 text-end">$${currentPrice.toFixed(2)}</div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6"><strong>Total:</strong></div>
+                                    <div class="col-6 text-end"><span class="text-success h5">$${total.toFixed(2)}</span></div>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        showDefaultSummary();
+                    }
+                    </text>
+            }
+        }
+
+        function showDefaultSummary() {
+            const summaryDiv = document.getElementById('orderSummary');
+            summaryDiv.innerHTML = `
+                <div class="alert alert-secondary">
+                    <h6><i class="fas fa-clipboard-list"></i> Order Summary</h6>
+                    <p class="text-muted mb-0">Select product to see order preview</p>
+                </div>
+            `;
         }
 
         document.addEventListener('DOMContentLoaded', function() {

@@ -41,9 +41,25 @@
                         <button type="submit" class="btn btn-primary btn-lg">
                             <i class="fas fa-cloud-upload-alt"></i> Upload File
                         </button>
-                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
-                            <i class="fas fa-home"></i> Back to Home
-                        </a>
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-controller="Home" asp-action="AdminDashboard" class="btn btn-secondary">
+                                <i class="fas fa-home"></i> Back to Admin Menu
+                            </a>
+                        }
+                        else if (User.IsInRole("Customer"))
+                        {
+                            <a asp-controller="Home" asp-action="CustomerDashboard" class="btn btn-secondary">
+                                <i class="fas fa-home"></i> Back to Customer Menu
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-home"></i> Back to Home
+                            </a>
+                        }
                     </div>
                 </form>
             </div>

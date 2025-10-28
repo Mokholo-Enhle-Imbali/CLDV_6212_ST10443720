@@ -1,5 +1,6 @@
 ﻿using CLVD6212_POE.Models;
 using CLVD6212_POE.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Concurrent;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CLVD6212_POE.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IFunctionsApi _api;
@@ -18,15 +20,18 @@ namespace CLVD6212_POE.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "Customer,Admin")]
         public async Task<IActionResult> Index()
         {
             var products = await _api.GetProductsAsync();
             return View(products);
         }
 
+        [Authorize(Roles ="Admin")]
         public IActionResult Create() => View();
 
         [HttpPost, ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(Product product, IFormFile? imageFile)
         {
             if (!ModelState.IsValid) return View(product);
@@ -44,6 +49,7 @@ namespace CLVD6212_POE.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(string id)
         {
             if (string.IsNullOrWhiteSpace(id)) return NotFound();
@@ -52,12 +58,13 @@ namespace CLVD6212_POE.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(Product product, IFormFile? imageFile)
         {
             if (!ModelState.IsValid) return View(product);
             try
             {
-                var updated = await _api.UpdateProductAsync(product.ProductId, product, imageFile);
+                var updated = await _api.UpdateProductAsync(product.ProductId!, product, imageFile);
                 TempData["Success"] = $"Product '{updated.ProductName}' updated successfully!";
                 return RedirectToAction(nameof(Index));
             }
@@ -70,6 +77,7 @@ namespace CLVD6212_POE.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(string id)
         {
             try

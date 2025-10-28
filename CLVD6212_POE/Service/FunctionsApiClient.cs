@@ -284,6 +284,12 @@ namespace CLVD6212_POE.Service
             };
         }
 
+        public async Task<Customer?> GetCustomerByUsernameAsync(string username)
+        {
+            var customers = await GetCustomersAsync();
+            return customers.FirstOrDefault(x=>x.Username.Equals(username,StringComparison.OrdinalIgnoreCase) == true);
+        }
+
         // DTOs that match Functions JSON (camelCase)
         private sealed record OrderDto(
             string Id,

@@ -1,5 +1,6 @@
 ﻿using CLVD6212_POE.Models;
 using CLVD6212_POE.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Collections.Concurrent;
 
 namespace CLVD6212_POE.Controllers
 {
-
+    [Authorize]
     public class CustomerController : Controller
     {
         private readonly IFunctionsApi _api;
@@ -22,6 +23,7 @@ namespace CLVD6212_POE.Controllers
         public IActionResult Create() => View();
 
         [HttpPost, ValidateAntiForgeryToken]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Create(Customer customer)
         {
             if (!ModelState.IsValid) return View(customer);
@@ -46,6 +48,7 @@ namespace CLVD6212_POE.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Edit(string id, Customer customer)
         {
             if (!ModelState.IsValid) return View(customer);
@@ -63,6 +66,7 @@ namespace CLVD6212_POE.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Delete(string id)
         {
             try

@@ -3,17 +3,29 @@
 
 @{
     ViewData["Title"] = "Order Details";
+    var isAdmin = User.IsInRole("Admin");
+    var isCustomer = User.IsInRole("Customer");
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2><i class="fas fa-receipt"></i> Order Details</h2>
     <div>
+       @if(isAdmin){
         <a asp-action="Edit" asp-route-id="@Model.RowKey" class="btn btn-primary">
             <i class="fas fa-edit"></i> Edit
         </a>
-        <a asp-action="Index" class="btn btn-secondary">
-            <i class="fas fa-list"></i> Back to List
-        </a>
+
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-list"></i> Back to List
+            </a>
+        }
+        else if (isCustomer)
+        {
+            <a asp-action="MyOrders" class="btn btn-secondary">
+                <i class="fas fa-list"></i> Back to List
+            </a>
+        }
+
     </div>
 </div>
 

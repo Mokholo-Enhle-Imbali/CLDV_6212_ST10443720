@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -35,6 +36,7 @@ namespace ABCRetailersFunction.Functions
             _queueStock = cfg["QUEUE_STOCK_UPDATES"] ?? "stock-updates";
         }
 
+        //List of orders
         [Function("OrderList")]
         public async Task<HttpResponseData> List(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "orders")] HttpRequestData req)
@@ -65,6 +67,23 @@ namespace ABCRetailersFunction.Functions
             {
                 return await HttpJson.NotFoundAsync(req, "Order not found");
             }
+        }
+
+        [Function("Order_GetOrderByCustomerId")]
+        public async Task<HttpResponseData> GetOrdersByCustomerId
+            (
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route ="orders/by-customer/{customerId}")] HttpRequestData req, string customerId
+            )
+        {
+            var table= new TableClient(_conn, _ordersTable);
+            await table.CreateIfNotExistsAsync();
+
+            var orders= new List<OrderDto>();
+            await foreach(var entity in table.QueryAsync<OrderEntity>(x=>x.PartitionKey=="Order" && x.CustomerId == customerId))
+            {
+                orders.Add(Map.ToDto(entity));
+            }
+            return HttpJson.Ok(req, orders.OrderByDescending(o => o.OrderDateUtc).ToList());
         }
 
         public record OrderCreate(string CustomerId, string ProductId, int Quantity);

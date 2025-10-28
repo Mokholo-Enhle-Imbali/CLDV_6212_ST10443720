@@ -10,6 +10,7 @@ namespace CLVD6212_POE.Service
         Task<Customer> CreateCustomerAsync(Customer c);
         Task<Customer> UpdateCustomerAsync(string id, Customer c);
         Task DeleteCustomerAsync(string id);
+        Task<Customer> GetCustomerByUsernameAsync(string username);
 
         // Products
         Task<List<Product>> GetProductsAsync();

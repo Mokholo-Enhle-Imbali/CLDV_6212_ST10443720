@@ -1,12 +1,14 @@
 using CLVD6212_POE.Models;
 using CLVD6212_POE.Models.ViewModels;
 using CLVD6212_POE.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace CLVD6212_POE.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly IFunctionsApi _api;
@@ -57,7 +59,19 @@ namespace CLVD6212_POE.Controllers
             return View();
         }
 
+        [Authorize(Roles ="Admin")]
+        public IActionResult AdminDashboard()
+        {
+            return View();
+        }
 
+        [Authorize(Roles = "Customer")]
+        public IActionResult CustomerDashboard()
+        {
+            return View();
+        }
+
+        [Authorize(Roles ="Admin,Customer")]
         public IActionResult ContactUs()
         {
             return View();

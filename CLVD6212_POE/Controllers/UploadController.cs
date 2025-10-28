@@ -1,12 +1,15 @@
 ﻿using CLVD6212_POE.Models;
 using CLVD6212_POE.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace CLVD6212_POE.Controllers
 {
+    [Authorize]
     public class UploadController : Controller
     {
+
         private readonly IFunctionsApi _api;
         public UploadController(IFunctionsApi api) => _api = api;
 

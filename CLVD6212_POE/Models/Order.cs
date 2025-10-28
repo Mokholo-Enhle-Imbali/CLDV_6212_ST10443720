@@ -2,6 +2,7 @@
 using Azure.Data.Tables;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace CLVD6212_POE.Models
@@ -11,6 +12,8 @@ namespace CLVD6212_POE.Models
         public string PartitionKey { get; set; } = "Order";
         public string RowKey { get; set; } = Guid.NewGuid().ToString();
         public DateTimeOffset? Timestamp { get; set; }
+
+        [NotMapped]
         public ETag ETag { get; set; }
 
         [Display(Name = "Order ID")]
