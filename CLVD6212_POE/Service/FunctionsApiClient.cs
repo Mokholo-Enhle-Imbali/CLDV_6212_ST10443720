@@ -40,12 +40,26 @@ namespace CLVD6212_POE.Service
         public async Task<List<Customer>> GetCustomersAsync()
             => await ReadJsonAsync<List<Customer>>(await _http.GetAsync(CustomersRoute));
 
-        public async Task<Customer?> GetCustomerAsync(string id)
+        //public async Task<Customer?> GetCustomerAsync(string id)
+        //{
+        //    var resp = await _http.GetAsync($"{CustomersRoute}/{id}");
+        //    if (resp.StatusCode == System.Net.HttpStatusCode.NotFound) return null;
+        //    return await ReadJsonAsync<Customer>(resp);
+        //}
+
+        public async Task<Customer?> GetCustomerAsync(string username)
         {
-            var resp = await _http.GetAsync($"{CustomersRoute}/{id}");
-            if (resp.StatusCode == System.Net.HttpStatusCode.NotFound) return null;
-            return await ReadJsonAsync<Customer>(resp);
+            var resp = await _http.GetAsync(CustomersRoute); // no /{id}, just get all
+            resp.EnsureSuccessStatusCode();
+
+            // Deserialize as a list
+            var customers = await ReadJsonAsync<List<Customer>>(resp);
+
+            // Find the customer by username
+            return customers.FirstOrDefault(c => c.Username == username);
         }
+
+
 
         public async Task<Customer> CreateCustomerAsync(Customer c)
             => await ReadJsonAsync<Customer>(await _http.PostAsync(CustomersRoute, JsonBody(new
@@ -137,6 +151,10 @@ namespace CLVD6212_POE.Service
         public async Task DeleteProductAsync(string id)
             => (await _http.DeleteAsync($"{ProductsRoute}/{id}")).EnsureSuccessStatusCode();
 
+
+
+
+
         // ---------- Orders (use DTOs → map to enum) ----------
         public async Task<List<Order>> GetOrdersAsync()
         {
@@ -152,13 +170,41 @@ namespace CLVD6212_POE.Service
             return ToOrder(dto);
         }
 
+        //public async Task<Order> CreateOrderAsync(string customerId, string productId, int quantity)
+        //{
+        //    // With JsonSerializerDefaults.Web, keys serialize as: customerId, productId, quantity
+        //    var payload = new {customerId, productId, quantity, status= OrderStatus.Submitted, orderDateUtc = DateTime.UtcNow };
+        //    var dto = await ReadJsonAsync<OrderDto>(await _http.PostAsync(OrdersRoute, JsonBody(payload)));
+        //    return ToOrder(dto);
+        //}
+
+
+
         public async Task<Order> CreateOrderAsync(string customerId, string productId, int quantity)
         {
-            // With JsonSerializerDefaults.Web, keys serialize as: customerId, productId, quantity
-            var payload = new { customerId, productId, quantity };
-            var dto = await ReadJsonAsync<OrderDto>(await _http.PostAsync(OrdersRoute, JsonBody(payload)));
-            return ToOrder(dto);
+            var payload = new
+            {
+                customerId = customerId,
+                productId = productId,
+                quantity = quantity
+            };
+
+            var json = JsonSerializer.Serialize(payload, _json);
+            Console.WriteLine($"[CreateOrderAsync] Sending payload: {json}");
+
+            var resp = await _http.PostAsync(OrdersRoute, new StringContent(json, Encoding.UTF8, "application/json"));
+
+            if (!resp.IsSuccessStatusCode)
+            {
+                var error = await resp.Content.ReadAsStringAsync();
+                Console.WriteLine($"[CreateOrderAsync] API returned {resp.StatusCode}: {error}");
+                throw new HttpRequestException($"API returned {resp.StatusCode}: {error}");
+            }
+
+            return await ReadJsonAsync<Order>(resp);
         }
+
+
 
         public async Task UpdateOrderStatusAsync(string id, string newStatus)
         {
