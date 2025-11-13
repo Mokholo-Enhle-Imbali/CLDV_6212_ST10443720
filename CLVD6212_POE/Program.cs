@@ -74,7 +74,8 @@ CultureInfo.DefaultThreadCurrentUICulture = culture;
 // Pipeline
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    //app.UseExceptionHandler("/Home/Error");
+    app.UseDeveloperExceptionPage(); // show full errors
     app.UseHsts();
 }
 

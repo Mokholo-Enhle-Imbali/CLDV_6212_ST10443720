@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,8 +48,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Home/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbkRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Home/CustomerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Home/Index.cshtml]
@@ -54,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Login/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Order/Create.cshtml]
@@ -72,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Order/MyOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +110,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/enhle/OneDrive/Desktop/GitHub/CLDV_6212_ST10443720/CLVD6212_POE/Views/Shared/Error.cshtml]

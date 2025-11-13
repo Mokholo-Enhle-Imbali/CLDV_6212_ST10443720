@@ -66,7 +66,7 @@ namespace CLVD6212_POE.Models
             Submitted,
             Processing,
             Completed,
-            Canceled
+            Cancelled
         }
     }
 }

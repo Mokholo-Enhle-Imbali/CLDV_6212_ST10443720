@@ -2,25 +2,79 @@
     ViewData["Title"] = "Customer Dashboard";
 }
 
-<div class="mt-5">
-    <h2 class="mb-2">Welcome, @User.Identity?.Name!</h2>
-    <p class="text-muted">You are logged in as a <strong>Customer</strong>.</p>
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Customer Dashboard</h1>
+        <p class="text-muted fs-5">
+            Welcome, <span class="fw-semibold">@User.Identity?.Name</span> — you are logged in as a <strong>Customer</strong>.
+        </p>
+    </div>
 
-    <div class="list-group mt-4">
-        <a asp-controller="Product" asp-action="Index" class="list-group-item list-group-item-action">
-            <i class="fas fa-box-open me-2"></i> Browse Products
-        </a>
+    <div>
+        <form method="post" asp-controller="Login" asp-action="Index">
+            <button type="submit" class="btn btn-outline-danger">
+                Logout
+            </button>
+        </form>
+    </div>
 
-        <a asp-controller="Order" asp-action="MyOrders" class="list-group-item list-group-item-action">
-            <i class="fas fa-shopping-bag me-2"></i> Your Orders
-        </a>
 
-        <a asp-controller="Upload" asp-action="Index" class="list-group-item list-group-item-action">
-            <i class="fas fa-upload me-2"></i> Upload Payment Proof
-        </a>
 
-        <a asp-controller="Home" asp-action="Privacy" class="list-group-item list-group-item-action">
-            <i class="fas fa-shield-alt me-2"></i> View Privacy Policy
-        </a>
+    <div class="row g-4">
+        <!-- Browse Products -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-box-seam text-primary fs-1 mb-3"></i>
+                    <h5 class="card-title">Browse Products</h5>
+                    <p class="text-muted">Explore our latest catalog and add to your cart.</p>
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-outline-primary w-100">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Orders -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-bag-check text-success fs-1 mb-3"></i>
+                    <h5 class="card-title">Your Orders</h5>
+                    <p class="text-muted">Track your current and past orders.</p>
+                    <a asp-controller="Order" asp-action="MyOrders" class="btn btn-outline-success w-100">
+                        View Orders
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Payment Proof -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-upload text-info fs-1 mb-3"></i>
+                    <h5 class="card-title">Upload Payment Proof</h5>
+                    <p class="text-muted">Securely upload your payment confirmation files.</p>
+                    <a asp-controller="Upload" asp-action="Index" class="btn btn-outline-info w-100">
+                        Upload Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Policy -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 h-100 text-center">
+                <div class="card-body">
+                    <i class="bi bi-shield-lock text-danger fs-1 mb-3"></i>
+                    <h5 class="card-title">Privacy Policy</h5>
+                    <p class="text-muted">Review how we handle your data securely.</p>
+                    <a asp-controller="Home" asp-action="Privacy" class="btn btn-outline-danger w-100">
+                        View Policy
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

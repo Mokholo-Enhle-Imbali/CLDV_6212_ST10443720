@@ -2,26 +2,93 @@
     ViewData["Title"] = "Admin Dashboard";
 }
 
-<div class="mt-4">
-    <h2>Welcome, @User.Identity?.Name!</h2>
-    <p class="text-muted">You are logged in as an <strong>Administrator</strong>.</p>
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Admin Dashboard</h1>
+        <p class="text-muted fs-5">
+            Welcome, <span class="fw-semibold">@User.Identity?.Name</span> — you are logged in as an <strong>Administrator</strong>.
+        </p>
+    </div>
 
-    <div class="list-group mt-4">
-        <a asp-controller="Customer" asp-action="Index" class="list-group-item list-group-item-action">
-            Manage Customers
-        </a>
-        <a asp-controller="Product" asp-action="Index" class="list-group-item list-group-item-action">
-            Manage Products
-        </a>
-        <a asp-controller="Order" asp-action="Index" class="list-group-item list-group-item-action">
-            View & Process Orders
-        </a>
-        <a asp-controller="Upload" asp-action="Index" class="list-group-item list-group-item-action">
-            View Uploaded Files
-        </a>
-        <a asp-controller="Home" asp-action="Privacy" class="list-group-item list-group-item-action">
-            Manage Privacy Policy
-        </a>
+    <div>
+        <form method="post" asp-controller="Login" asp-action="Index">
+            <button type="submit" class="btn btn-outline-danger">
+                Logout
+            </button>
+        </form>
+    </div>
+
+    <div class="row g-4">
+        <!-- Manage Customers -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                    <h5 class="card-title">Manage Customers</h5>
+                    <p class="text-muted">View and manage customer information.</p>
+                    <a asp-controller="Customer" asp-action="Index" class="btn btn-outline-primary w-100">
+                        Go to Customers
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Products -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-box-seam text-success fs-1 mb-3"></i>
+                    <h5 class="card-title">Manage Products</h5>
+                    <p class="text-muted">Add, edit, and remove products.</p>
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-outline-success w-100">
+                        Go to Products
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orders -->
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-receipt-cutoff text-warning fs-1 mb-3"></i>
+                    <h5 class="card-title">View & Process Orders</h5>
+                    <p class="text-muted">Track and update order statuses.</p>
+                    <a asp-controller="Order" asp-action="Index" class="btn btn-outline-warning w-100">
+                        Go to Orders
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Uploads -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-upload text-info fs-1 mb-3"></i>
+                    <h5 class="card-title">Uploaded Files</h5>
+                    <p class="text-muted">View and manage uploaded documents or media.</p>
+                    <a asp-controller="Upload" asp-action="Index" class="btn btn-outline-info w-100">
+                        View Files
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Policy -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-shield-lock text-danger fs-1 mb-3"></i>
+                    <h5 class="card-title">Privacy Policy</h5>
+                    <p class="text-muted">Review or update privacy policy details.</p>
+                    <a asp-controller="Home" asp-action="Privacy" class="btn btn-outline-danger w-100">
+                        Manage Policy
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 
